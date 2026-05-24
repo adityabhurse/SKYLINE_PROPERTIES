@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKYLINE PROPERTIES Nagpur</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏢</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">SKYLINE</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#properties">Properties</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li><button id="nearMeBtn" class="btn btn-outline-warning btn-sm ms-3">📍 Near Me</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" data-aos="fade-in" data-aos-duration="1200">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-8">
+                    <div class="hero-content text-lg-start text-center">
+                        <h1 class="display-5 fw-bold">Modern living, refined for Nagpur</h1>
+                        <p class="lead">Find carefully selected homes, luxury apartments, and family residences with clarity and style.</p>
+                        <a href="#properties" class="btn btn-warning btn-lg shadow">Explore Homes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mb-5">
+        <div class="row g-3 text-center stats-strip" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-md-4">
+                <div class="stat-card">
+                    <span class="stat-number">120+</span>
+                    <p>Verified listings</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stat-card">
+                    <span class="stat-number">24/7</span>
+                    <p>support available</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stat-card">
+                    <span class="stat-number">15+</span>
+                    <p>premium neighbourhoods</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container mb-5">
+        <div class="row g-4 feature-grid" data-aos="fade-up">
+            <div class="col-md-4">
+                <div class="feature-card p-4">
+                    <h6>Local expertise</h6>
+                    <p class="text-muted small mb-0">We know Nagpur's best properties and help you choose with confidence.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card p-4">
+                    <h6>Curated selection</h6>
+                    <p class="text-muted small mb-0">Each listing is selected for quality, comfort, and strong resale value.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card p-4">
+                    <h6>Transparent process</h6>
+                    <p class="text-muted small mb-0">Clear pricing, trusted support, and a smooth search experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container my-3 text-center" id="locationInfo"></div>
+
+    <!-- Properties -->
+    <section id="properties" class="container pb-5">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">Premium Properties</h2>
+            <p class="text-muted small">Browse handpicked residences built for comfort, value, and lifestyle.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 position-relative property-card" data-bs-toggle="modal" data-bs-target="#propertyModal" data-aos="fade-up">
+                    <img src="https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg?auto=compress&cs=tinysrgb&w=900" class="card-img-top" alt="Skyline Corner Villa">
+                    <div class="price-tag">₹2.4 Cr</div>
+                    <div class="card-body">
+                        <h5 class="text-white">Skyline Corner Villa</h5>
+                        <p class="text-light">Civil Lines, Nagpur</p>
+                        <p class="text-white small">A premium 4BHK villa with private terrace, landscaped garden and elegant finishes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 position-relative property-card" data-bs-toggle="modal" data-bs-target="#propertyModal" data-aos="fade-up">
+                    <img src="https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg?auto=compress&cs=tinysrgb&w=900" class="card-img-top" alt="Riverfront Penthouse">
+                    <div class="price-tag">₹1.6 Cr</div>
+                    <div class="card-body">
+                        <h5 class="text-white">Riverfront Penthouse</h5>
+                        <p class="text-light">Wardha Road, Nagpur</p>
+                        <p class="text-white small">Sunlit 3BHK with panoramic river views, designer living spaces and resort-style amenities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 position-relative property-card" data-bs-toggle="modal" data-bs-target="#propertyModal" data-aos="fade-up">
+                    <img src="https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=900" class="card-img-top" alt="City View Residence">
+                    <div class="price-tag">₹98 Lakh</div>
+                    <div class="card-body">
+                        <h5 class="text-white">City View Residence</h5>
+                        <p class="text-light">Hatipada, Nagpur</p>
+                        <p class="text-white small">Modern 2BHK apartment close to shopping, schools and premium dining destinations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 position-relative property-card" data-bs-toggle="modal" data-bs-target="#propertyModal" data-aos="fade-up">
+                    <img src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=900" class="card-img-top" alt="Garden Loft Suite">
+                    <div class="price-tag">₹1.2 Cr</div>
+                    <div class="card-body">
+                        <h5 class="text-white">Garden Loft Suite</h5>
+                        <p class="text-light">Sonegaon, Nagpur</p>
+                        <p class="text-white small">Spacious loft-style home with green courtyard, smart controls and luxe finishes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 position-relative property-card" data-bs-toggle="modal" data-bs-target="#propertyModal" data-aos="fade-up">
+                    <img src="https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=900" class="card-img-top" alt="Elite Family Home">
+                    <div class="price-tag">₹1.8 Cr</div>
+                    <div class="card-body">
+                        <h5 class="text-white">Elite Family Home</h5>
+                        <p class="text-light">Ram Nagar, Nagpur</p>
+                        <p class="text-white small">Beautifully designed residence featuring high ceilings, comfort, and quiet community living.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 position-relative property-card" data-bs-toggle="modal" data-bs-target="#propertyModal" data-aos="fade-up">
+                    <img src="https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=900" class="card-img-top" alt="Urban Luxury Haven">
+                    <div class="price-tag">₹1.05 Cr</div>
+                    <div class="card-body">
+                        <h5 class="text-white">Urban Luxury Haven</h5>
+                        <p class="text-light">Dhantoli, Nagpur</p>
+                        <p class="text-white small">Contemporary 3BHK with premium amenities, covered parking and city convenience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-sm p-4 contact-card" data-aos="zoom-in">
+                        <h4 class="text-center mb-4">Request a Callback</h4>
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6"><input type="text" class="form-control" placeholder="Your Name" required></div>
+                                <div class="col-md-6"><input type="email" class="form-control" placeholder="Email" required></div>
+                                <div class="col-12"><input type="tel" class="form-control" placeholder="Phone Number" required></div>
+                                <div class="col-12"><textarea class="form-control" rows="3" placeholder="What are you looking for?"></textarea></div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-warning w-100 py-3">Send Inquiry</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer class="footer-section text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-5">
+                    <h5 class="mb-3">Location</h5>
+                    <div class="footer-map ratio ratio-16x9 mb-3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.2925953874687!2d79.06901677532052!3d21.145800885998645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4defd59af2d7b%3A0x8f4a5ac6d26d5b86!2sNagpur%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <p class="text-muted small mb-0">Nagpur, Maharashtra, India</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li>Premium Residential Sales</li>
+                        <li>Custom Home Consulting</li>
+                        <li>Property Valuation & Support</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-3">Headquarters</h5>
+                    <p class="mb-2">City</p>
+                    <p class="mb-2 text-muted">State, Country</p>
+                    <p class="mb-1">your.email@example.com</p>
+                    <p class="mb-0 text-muted">YOUR NAME</p>
+                </div>
+            </div>
+            <div class="footer-bottom text-center pt-4 mt-4 border-top border-secondary">
+                <p class="mb-0 small text-muted">© 2026 Your Company Name · Made by YOUR NAME · your.email@example.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Property Modal -->
+    <div class="modal fade" id="propertyModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-white border-secondary">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title" id="modalTitle">Property Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImg" src="" class="img-fluid rounded mb-3" alt="Property">
+                    <h4 id="modalPrice" class="text-warning fw-bold mb-2"></h4>
+                    <p id="modalLocation" class="text-light mb-3"></p>
+                    <p id="modalDesc" class="small"></p>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning" onclick="document.getElementById('contact').scrollIntoView(); bootstrap.Modal.getInstance(document.getElementById('propertyModal')).hide();">Enquire Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 50,
+            duration: 800
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
